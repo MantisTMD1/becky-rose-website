@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Becky Rose</title>
+  <meta name="description" content="Becky Stadnick is a Minnesota writer, mother, crafter, rock hound, and lifelong collector of things she doesn’t need.">
+  <meta name="theme-color" content="#12342a">
+  <meta property="og:title" content="About | Becky Rose">
+  <meta property="og:description" content="Becky Stadnick is a Minnesota writer, mother, crafter, rock hound, and lifelong collector of things she doesn’t need.">
+  <meta property="og:image" content="assets/cover.webp">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-head">
+    <a class="stamp" href="index.html">Becky Rose</a>
+    <nav aria-label="Main">
+      <button class="menu-btn" aria-expanded="false" aria-controls="site-tabs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menu</button>
+      <ul class="tabs" id="site-tabs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <div class="album">
+
+      <section class="spread mother" aria-labelledby="about-title">
+        <div class="page page--left">
+          <div>
+            <div class="tipped settle"><span class="corner corner--tl"></span><span class="corner corner--tr"></span><span class="corner corner--bl"></span><span class="corner corner--br"></span>
+              <img src="assets/becky.webp" width="1350" height="1800" alt="Becky Rose smiling in a red rain jacket beside a tree, with a river and mountains behind her." fetchpriority="high">
+            </div>
+          </div>
+        </div>
+        <div class="page page--right prose">
+          <h1 class="page-title" id="about-title">About Becky Rose</h1>
+          <p>Becky Stadnick is a Minnesota writer, mother, crafter, rock hound, and lifelong collector of things she doesn’t need.</p>
+          <p>Her debut memoir, <cite>Laughing Baby, Crying Mom: On Intrusive Thoughts, Laughter, and Putting Myself Back Together</cite>, explores the messy, funny, frightening, and unexpectedly beautiful reality of motherhood—including intrusive thoughts, anxiety, identity, and the strange experience of becoming someone new while trying to raise tiny humans.</p>
+          <p>Becky writes about the things mothers don't always say out loud: the thoughts that scare us, the moments that make us laugh when we probably shouldn't, the absurdity of parenting, and the small, ordinary moments that make being a mom worth it.</p>
+          <p>When she isn't writing, Becky can usually be found spending time with her two kids and their dog, searching for interesting rocks, making a recipe or craft she saw online, or impulsively starting a large project.</p>
+          <p>She hopes her writing makes readers laugh, feel seen, and—most importantly—feel a little less alone.</p>
+          <div class="fact-list">
+            <div class="field"><span class="label">Name</span><span class="line"><span class="hand write-in" data-delay="200">Becky Stadnick</span></span></div>
+            <div class="field"><span class="label">Writes as</span><span class="line"><span class="hand write-in" data-delay="500">Becky Rose</span></span></div>
+            <div class="field"><span class="label">Lives in</span><span class="line"><span class="hand write-in" data-delay="800">Minnesota</span></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="spread write" aria-labelledby="write">
+        <div class="page page--left prose">
+          <h2 class="page-title" id="write">Author talks &amp; events</h2>
+          <p>Contact me at <a href="mailto:wardlow.becky@gmail.com">wardlow.becky@gmail.com</a></p>
+          <p>Would you like to contact me for an author talk or event?</p>
+        </div>
+        <div class="page page--right">
+          <form class="form" data-placeholder action="#" method="post">
+            <label><span class="label">Name</span><input type="text" name="name" autocomplete="name" required></label>
+            <label><span class="label">Email</span><input type="email" name="email" autocomplete="email" required></label>
+            <label><span class="label">Message</span><textarea name="message" rows="5" required></textarea></label>
+            <label><span class="label">Website URL (optional)</span><input type="url" name="website" autocomplete="url"></label>
+            <div class="actions" style="margin-top:8px">
+              <button class="btn" type="submit">Send <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </div>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-foot">
+    <a class="stamp" href="index.html">Becky Rose</a>
+    <nav aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="books.html">Books</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+    <p>&copy; 2026 Becky Rose</p>
+  </footer>
+  <script src="main.js" defer></script>
+</body>
+</html>
