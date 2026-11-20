@@ -42,6 +42,32 @@
     targets.forEach(function (el) { el.classList.add("is-in"); });
   }
 
+  // Lazy scroll reveal: each page card rises into place, then its contents follow one by one
+  var cards = document.querySelectorAll(".spread, .site-foot");
+  cards.forEach(function (card) {
+    card.classList.add("rise");
+    var items = card.querySelectorAll(
+      ":scope > .said-head, :scope > .said-more, :scope > .page > *:not(.arrival-form):not(.settle):not(.write-in), .arrival-form > *, :scope > nav, :scope > p, :scope > a"
+    );
+    items.forEach(function (el, i) {
+      el.classList.add("rise-item");
+      el.style.setProperty("--i", Math.min(i, 8));
+    });
+  });
+  if ("IntersectionObserver" in window) {
+    var riseIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-risen");
+          riseIO.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0, rootMargin: "0px 0px -10% 0px" });
+    cards.forEach(function (card) { riseIO.observe(card); });
+  } else {
+    cards.forEach(function (card) { card.classList.add("is-risen"); });
+  }
+
   // The stitched spine of the spread you're reading lights up in marigold
   var spreads = document.querySelectorAll(".spread");
   if ("IntersectionObserver" in window && spreads.length) {
